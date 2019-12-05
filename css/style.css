@@ -12,11 +12,15 @@ h1 {
   border-radius: 10px;
   width: 80%;
   text-decoration: underline;
+  opacity: 0.9;
 }
 h2 {
   font-size: 30px;
   font-style: oblique;
   text-decoration: underline;
+}
+h3 {
+  font-size: 20px;
 }
 main {
   background-color: bisque;
@@ -27,9 +31,15 @@ main {
 p {
   color: darkblue;
   padding: 10px;
+  height: 160px;
 }
 #background-image {
   background-image: url('./../img/uw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+div {
+  color: yellow;
+  border-style: solid;
+  font-weight: bolder;
 }
