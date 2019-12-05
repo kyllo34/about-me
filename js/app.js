@@ -28,7 +28,7 @@ if (myChicken.toLowerCase() === 'y' || myChicken.toLowerCase() === 'yes') {
 } else {
   alert('You didnt respond correctly!');
 }
-var myPineapple = prompt('Do I like pinapple on pizza?');
+var myPineapple = prompt('Do I like pineapple on pizza?');
 if (myPineapple.toLowerCase() === 'y' || myPineapple.toLowerCase() === 'yes') {
   alert('No Way! Pineapple does\'t belong on pizza!');
 } else if (myPineapple.toLowerCase() === 'n' || myPineapple.toLowerCase() === 'no') {
@@ -63,16 +63,19 @@ for (var i = 0; i < 4; i++) {
     numGuess = prompt('Higher!');
   } else if (numGuess > numAnswer) {
     numGuess = prompt('Lower!');
-  } else {
+  } else if (parseInt(numGuess) === numAnswer) {
     alert('You are correct!');
     score++;
     i = 4;
+  } else {
+    numGuess = prompt('Please enter a number!');
   }
 }
 alert('The answer was ' + numAnswer + '!');
 
 var songAnswer = ['Amerika', 'My Body', 'Apartment', 'Titus was Born', 'Cough Syrup'];
 var songGuess = prompt('Name a song by Young the Giant.');
+// Prompts user to guess a string in the array 6 times. If correct answer is guessed loop is terminated
 // Had some help from a friend to make loop work. Did not set i to 6 when correct answer was selected
 for (i = 0; i < 6; i++) {
   for (var j = 0; j < songAnswer.length; j++) {
